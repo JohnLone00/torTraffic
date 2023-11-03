@@ -24,8 +24,12 @@ make && make install
 ``` shell
 sudo apt-get install firefox
 sudo apt-get install tcpdump
+sudo apt-get install python3-pip
+sudo apt-get install git
 pip3 install selenium
 pip3 install psutil
+cd /home
+git clone https://github.com/JohnLone00/torTraffic.git
 cd traffic
 cd torTraffic
 chmod 777 geckodriver
