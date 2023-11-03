@@ -42,5 +42,5 @@ chmod 777 geckodriver
 sudo apt-get install ethtool
 ethtool -K eth0 gro off
 screen -R traffic
-python3 main.py -w awf200.txt -b 1 -e 50
+python3 main.py -w awf200-N.txt -b 1 -e 50
 ```
