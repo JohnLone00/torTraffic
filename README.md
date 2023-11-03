@@ -1,1 +1,33 @@
-# torTraffic
+
+# 去官网下载源码
+``` shell
+mkdir tor
+cd tor
+wget https://dist.torproject.org/tor-0.4.7.13.tar.gz
+tar -zxvf tor-0.4.7.13.tar.gz
+cd tor-0.4.7.13
+```
+# 编译
+```
+sudo apt update
+sudo apt upgrade
+sudo apt-get install make
+sudo apt-get install build-essential
+sudo apt-get install libevent-dev -y
+sudo apt-get install libssl-dev -y
+sudo apt-get install zlib1g-dev -y
+./configure
+make && make install
+```
+
+# python脚本环境
+``` shell
+sudo apt-get install firefox
+sudo apt-get install tcpdump
+pip3 install selenium
+pip3 install psutil
+cd traffic
+cd torTraffic
+chmod 777 geckodriver
+```
+
