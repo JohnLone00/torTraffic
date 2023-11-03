@@ -27,11 +27,12 @@ sudo apt-get install firefox
 sudo apt-get install tcpdump
 sudo apt-get install python3-pip
 sudo apt-get install git
+sudo apt-get install screen
 pip3 install selenium
 pip3 install psutil
 cd /home
 git clone https://github.com/JohnLone00/torTraffic.git
-cd traffic
+cd torTraffic
 cd torTaffic
 chmod 777 geckodriver
 ```
@@ -40,5 +41,6 @@ chmod 777 geckodriver
 ```shell
 sudo apt-get install ethtool
 ethtool -K eth0 gro off
+screen -R traffic
 python3 main.py -w awf200.txt -b 1 -e 50
 ```
