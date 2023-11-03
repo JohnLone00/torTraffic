@@ -68,9 +68,9 @@ def initDriver():
 
 def startTcpdump(filename):
     #cmd = "tcpdump tcp port \(8443 or 9001 or 443 or 8140 or 8080 or 80 or 9030 or 9040 or 9050 or 9051 or 9150 or 9003 or 500\) -w " + filename
-    cmd = "tcpdump tcp port \(8443 or 9001 or 443 or 500 or 9003\) -w " + filename
+    # cmd = "tcpdump tcp port \(8443 or 9001 or 443 or 500 or 9003\) -w " + filename
     # cmd  = "tcpdump tcp and \(\(src host 192.210.190.98 and src port 17602\) or \(dst host 192.210.190.98 and dst port 17602\)\) -w " + filename
-    # cmd = "tcpdump tcp and not port \(9050 or 22 or 21 or 6010 or 6011\) -w " + filename
+    cmd = "tcpdump tcp and not port \(9050 or 22 or 21 or 6010 or 6011\) -w " + filename
     os.popen(cmd)
 
 def closeTcpdump():
