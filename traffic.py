@@ -3,14 +3,11 @@ import redis
 import requests
 import socket
 import os
-import requests
 import subprocess
-from bs4 import  BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.common import exceptions
-import re
 import psutil
 import signal
 from selenium.webdriver.support.ui import WebDriverWait
@@ -26,13 +23,10 @@ serverTorPort = 9050
 serverTcpdumpPath = r"./torPCAP-Pure/"
 serverInforPath = r"./torInfor/"
 badPcapLog = r"./torTrafficLog/badPcapLog.txt"
-#websitesFile = r"./torTraffic/10-20.txt"
 websitesFile = ''
 executable_path=r'./torTraffic/geckodriver'  # selenium启动firefox需要的驱动
-#executable_path=r'./torTraffic/geckodriver.exe'
 keeptime = 120
-r = redis.Redis(host='localhost',port=6379,decode_responses=True)
-pattern = re.compile(r'\d{1,}')
+
 
 def initDriver():
     #  配置浏览器代理
