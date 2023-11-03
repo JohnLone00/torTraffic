@@ -1,6 +1,7 @@
 
 # 去官网下载源码
 ``` shell
+cd /home
 mkdir tor
 cd tor
 wget https://dist.torproject.org/tor-0.4.7.13.tar.gz
