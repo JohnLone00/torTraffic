@@ -31,8 +31,9 @@ cd torTraffic
 chmod 777 geckodriver
 ```
 
-#运行脚本
+# 运行脚本
 ```shell
 sudo apt-get install ethtool
 ethtool -K eth0 gro off
+python3 main.py -w awf200.txt -b 1 -e 50
 ```
