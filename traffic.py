@@ -1,9 +1,7 @@
 import time
-import redis
-import requests
+
 import socket
 import os
-import subprocess
 from selenium import webdriver
 from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
