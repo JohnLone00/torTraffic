@@ -34,5 +34,5 @@ chmod 777 geckodriver
 #运行脚本
 ```shell
 sudo apt-get install ethtool
-ethtoll -K enol gro off
+ethtool -K eth0 gro off
 ```
