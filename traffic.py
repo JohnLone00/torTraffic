@@ -49,10 +49,9 @@ def initDriver():
 
 
 
-    d = DesiredCapabilities.FIREFOX
-    d["goog:loggingPrefs"] = {"performance": "ALL"}
+   
     
-    driver = webdriver.Firefox(desired_capabilities=d,executable_path=executable_path,
+    driver = webdriver.Firefox(executable_path=executable_path,
                                firefox_profile=firefox_profile,
                                options=firefox_options)
     return driver
