@@ -32,7 +32,7 @@ pip3 install psutil
 cd /home
 git clone https://github.com/JohnLone00/torTraffic.git
 cd traffic
-cd torTraffic
+cd torTaffic
 chmod 777 geckodriver
 ```
 
