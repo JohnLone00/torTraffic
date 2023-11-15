@@ -115,6 +115,8 @@ def simulation(driver,url):
 
     try:
         print(driver.title)
+        if driver.title == "":
+            return False
         if "ERROR" in driver.title:
             return False
         if "403 Forbidden" in driver.title:
