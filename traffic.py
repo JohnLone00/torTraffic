@@ -94,7 +94,8 @@ def openTor():
 def closeTor():
     result = subprocess.run("pkill tor", shell=True, universal_newlines=True, stdout=subprocess.PIPE,
                             stderr=subprocess.PIPE)
-
+    result_1 = subprocess.run("pkill firefox", shell=True, universal_newlines=True, stdout=subprocess.PIPE,
+                            stderr=subprocess.PIPE)
 def simulation(driver,url):
 
     try:
