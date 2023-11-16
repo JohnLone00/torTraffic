@@ -123,6 +123,8 @@ def simulation(driver,url):
             return False
         if "Just a moment..." in driver.title:
             return False
+        if "Request Rejected" in driver.title:
+            return False
         if "wrong" in driver.title:
             return False
         if "Access Denied" in driver.title:
